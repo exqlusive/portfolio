@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1f1f1f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oxanium", cursive;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1 {
+  @apply text-7xl;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+nav li {
+  @apply font-light text-sm mr-10 py-5;
+}
+nav li a {
+  @apply text-gray-300;
+}
+nav li a:link {
+  @apply text-gray-300;
+}
+nav li a:active {
+  color: #ff6600;
+}
+nav li a:visited {
+  @apply text-gray-300;
+}
+nav li a:hover {
+  color: #ff6600;
+}
+
+nav.nav-footer li {
+  @apply font-light text-xs mr-10 py-5;
+}
+nav.nav-footer li a {
+  @apply text-gray-300;
+}
+nav.nav-footer li a:link {
+  @apply text-gray-300;
+}
+nav.nav-footer li a:active {
+  color: #ff6600;
+}
+nav.nav-footer li a:visited {
+  @apply text-gray-300;
+}
+nav.nav-footer li a:hover {
+  color: #ff6600;
+}
+
+header {
+  background: #2b2b2b;
+  background: radial-gradient(circle, #2b2b2b 0%, #1f1f1f 100%);
+}
+
+.title {
+  color: #ff6600;
+}
+.title::after {
+  content: " ⎯⎯⎯";
+}
+
+.subtitle {
+  @apply text-3xl font-bold text-white pb-4 leading-relaxed;
+}
+
+.text-orange {
+  color: #ff6600;
+}
+
+a:visited {
+  @apply text-white;
+}
+
+a:hover {
+  @apply transition-colors ease-in-out text-white;
+}
+
+/*# sourceMappingURL=app.css.map */
