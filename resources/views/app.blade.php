@@ -4,9 +4,14 @@
     } catch (Exception $e) {
         $ssr = null;
     }
+
+    $locale = Session::pull('locale') ?? 'en';
+    App::setLocale($locale);
+
 @endphp
     <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<html lang="{{ str_replace('_', '-', App::getLocale()) }}">
 
 <head>
     <meta charset="UTF-8" />

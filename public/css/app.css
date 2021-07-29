@@ -32561,6 +32561,10 @@ header {
   background: radial-gradient(circle, #2b2b2b 0%, #1f1f1f 100%);
 }
 
+.flag {
+  height: 25px;
+}
+
 .title {
   color: #ff6600;
 }

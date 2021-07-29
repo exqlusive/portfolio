@@ -7,7 +7,9 @@ use App\Http\Controllers\QueueController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
 
 /*
@@ -22,7 +24,6 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    App::setlocale('nl');
     return Inertia::render('Index');
 });
 
@@ -41,3 +42,12 @@ Route::get('/journey', function () {
 Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
+
+Route::get('/{locale}', function ($locale) {
+    Session::put('locale', $locale);
+    return redirect()->to('/');
+});
+
+//leander - 7 hele rido  amagard
+//weprovide
+// socialdeal

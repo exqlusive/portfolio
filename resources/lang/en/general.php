@@ -22,4 +22,5 @@ return [
     'name' => 'Name',
     'email' => 'Email',
     'message' => 'Message',
+    'check_out_code' => 'Check out the code behind this website',
 ];

@@ -212,6 +212,8 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Contact");
 
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"mr-3\" data-v-76686289><a href=\"/nl\" data-v-76686289><img class=\"flag\" src=\"images/netherlands.png\" alt=\"flag_nl\" data-v-76686289></a></li><li data-v-76686289><a href=\"/en\" data-v-76686289><img class=\"flag\" src=\"images/united-states.png\" alt=\"flag_us\" data-v-76686289></a></li>", 2);
+
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
@@ -262,7 +264,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  })])])])]);
+  })]), _hoisted_9])])]);
 });
 
 /***/ }),

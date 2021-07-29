@@ -11,7 +11,7 @@
                         <div class="mt-3">
                             <a
                                 href="https://github.com/exqlusive/portfolio"
-                                class="px-4 py-2 bg-green-500 text-xs text-white rounded hover:bg-green-700 transition-all ease-in-out">Check out the code behind this website</a>
+                                class="px-4 py-2 bg-green-500 text-xs text-white rounded hover:bg-green-700 transition-all ease-in-out">{{ trans('general.check_out_code') }}</a>
                         </div>
                     </div>
                     <div class="col-span-4">

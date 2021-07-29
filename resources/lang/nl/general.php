@@ -22,4 +22,5 @@ return [
     'name' => 'Naam',
     'email' => 'E-mail',
     'message' => 'Bericht',
+    'check_out_code' => 'Bekijk de code achter deze website',
 ];
