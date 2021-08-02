@@ -1,15 +1,7 @@
 <?php
 
-use App\Http\Controllers\MenuController;
-use App\Http\Controllers\PlayerController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\QueueController;
-use App\Http\Controllers\TeamController;
-use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Cookie;
+use App\Http\Controllers\ContactFormController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
 
 /*
@@ -31,23 +23,12 @@ Route::get('/about', function () {
     return Inertia::render('About');
 });
 
-Route::get('/skills', function () {
-    return Inertia::render('Skills');
-});
-
-Route::get('/journey', function () {
-    return Inertia::render('Journey');
+Route::get('/curriculum-vitae', function () {
+    return Inertia::render('CV');
 });
 
 Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
 
-Route::get('/{locale}', function ($locale) {
-    Session::put('locale', $locale);
-    return redirect()->to('/');
-});
-
-//leander - 7 hele rido  amagard
-//weprovide
-// socialdeal
+Route::post('/contact', [ContactFormController::class, 'create']);

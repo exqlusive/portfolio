@@ -23,4 +23,5 @@ return [
     'email' => 'E-mail',
     'message' => 'Bericht',
     'check_out_code' => 'Bekijk de code achter deze website',
+    'skillset_message' => 'Nog steeds aan het lezen? Klik hier voor een overzicht van skills'
 ];

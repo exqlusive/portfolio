@@ -1,101 +1,67 @@
 <template>
-    <home-component>
-        <header>
-            <div class="max-w-7xl mx-auto">
-                <div class="grid grid-cols-12">
-                    <div class="col-span-12 lg:col-span-4 text-center lg:text-right">
-                        <h1
-                            class="text-white break-all text-2xl lg:text-6xl lg:mt-64">Wesley
-                            <span
-                                class="inline-block lg:block">Hiraki</span></h1>
-                        <div class="mt-3">
-                            <a
-                                href="https://github.com/exqlusive/portfolio"
-                                class="px-4 py-2 bg-green-500 text-xs text-white rounded hover:bg-green-700 transition-all ease-in-out">{{ trans('general.check_out_code') }}</a>
-                        </div>
-                    </div>
-                    <div class="col-span-4">
-                        <img src="/images/selfportret.png" alt="self">
-                    </div>
-                    <div class="col-span-12 lg:col-span-4 lg:mt-44">
-                        <h2 class="title font-extralight pb-5">{{ trans('general.job.title') }}</h2>
-                        <p class="subtitle">
-                            {{ trans('general.subtitle') }}
+    <page-component isActive="home">
+        <div class="px-4 lg:px-0">
+            <section class="banner">
+                <div class="max-w-7xl mx-auto grid grid-cols-3 gap-4 py-32 lg:py-40 lg:pt-72 relative">
+                    <div class="col-span-3 lg:col-span-2">
+                        <p class="title mb-5">
+                            Hallo
                         </p>
-                        <p class="text-gray-300 pb-4">
-                            {{ trans('general.job.description') }}
+                        <h1 class="mb-5">Ik ben <span class="inline-block lg:block">Wesley Hiraki</span></h1>
+                        <p class="subtitle mb-8">
+                            Software developer
                         </p>
-                        <ul class="text-orange text-sm space-y-2">
-                            <li>
-                                <i class="fa-solid fa-phone-office mr-2"></i>
-                                <a href="tel:0031615585990">+31 6 1558 5990</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mailbox mr-2"></i>
-                                <a href="mailto:contact@wesleyhiraki.nl">contact@wesleyhiraki.nl</a>
-                            </li>
-                        </ul>
+                        <inertia-link
+                            href="curriculum-vitae"
+                            class="py-4 px-10 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-600 rounded uppercase text-white shadow">Mijn CV</inertia-link>
+                    </div>
+
+                    <div class="hidden lg:block col-span-1">
+                        <img src="images/selfportret.png" alt="self portret">
                     </div>
                 </div>
-            </div>
-        </header>
-        <section>
-            <div class="max-w-7xl mx-auto py-10">
-                <div class="grid grid-cols-12 gap-4">
-                    <div class="col-span-12 lg:col-start-1 lg:col-end-5">
-                        <h2 class="title font-extralight pb-5">{{ trans('general.about.me') }}</h2>
-                        <p class="subtitle">
-                            {{ trans('general.about.subtitle') }}
-                        </p>
-                        <p class="text-gray-300 pb-4 text-sm">
-                            {{ trans('general.about.description') }}
-                        </p>
+            </section>
 
-                        <div class="flex items-center my-4">
-                            <div class="inline-block mr-4 text-orange">
-                                <span class="text-4xl font-bold">11</span>
-                            </div>
-                            <div class="inline-block text-white text-lg leading-snug">
-                                <span class="block">{{ trans('general.years') }} {{ trans('general.of') }}</span>
-                                <span class="block">{{ trans('general.experience') }}</span>
-                            </div>
-                        </div>
-                        <span
-                            class="block text-gray-500 text-xs">1 {{ trans('general.year_of_work_experience') }}</span>
-                        <div class="mt-4">
-                            <a href="https://github.com/exqlusive" target="_blank" class="mr-3">
-                                <i
-                                    class="fab fa-github text-2xl text-orange hover:text-white transition-colors ease-in-out"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/wesleyhiraki/" target="_blank">
-                                <i
-                                    class="fab fa-linkedin-in text-2xl text-orange hover:text-white transition-colors ease-in-out"></i>
-                            </a>
-                        </div>
+            <section class="bg-gray-100">
+                <div class="max-w-7xl mx-auto grid grid-cols-3 gap-4 py-10 lg:py-40">
+                    <div class="hidden md:block">
+                        <img src="images/voorstellen.png" alt="man met computer">
                     </div>
-
-                    <div class="col-span-12 lg:col-start-7 lg:col-end-12">
-                        <h2 class="title font-extralight pb-5">{{ trans('general.contact.me') }}</h2>
+                    <div class="col-span-3 md:col-start-2 xl:col-start-3">
                         <p class="subtitle">
-                            <i class="fa-solid fa-mug-hot"></i> {{ trans('general.contact.subtitle') }}
-                        </p>
-                        <p class="text-gray-300 pb-4 text-sm">
-                            {{ trans('general.contact.description') }}
+                            Laat ik mezelf even voorstellen
                         </p>
 
-                        <a href="mailto:contact@wesleyhiraki.nl" class="text-xl text-orange hover:text-white font-bold">contact@wesleyhiraki.nl <i class="fa-solid fa-arrow-right-long ml-3 animate-pulse"></i></a>
+                        <p class="py-4 text-gray-600">
+                            Ik ben een klantgericht en vriendelijke jongeman met een passie voor programmeren en het visualiseren, creatieve
+                            oplossingen maken staat hierin centraal. Verder ben ik een flexibele werker die niet bang is voor het
+                            onbekende.
+                        </p>
+
+                        <p class="text-gray-600">
+                            Met name heb ik ervaring opgedaan d.m.v. scholing en zelfstudie in PHP, HTML, CSS en Javascript
+                            en frameworks zoals Laravel, VueJS, NuxtJS.
+                        </p>
+
+                        <p class="pt-10">
+                            <inertia-link
+                                href="/curriculum-vitae"
+                                class="py-4 px-10 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-600 rounded uppercase text-white shadow">Bekijk Mijn CV</inertia-link>
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </home-component>
+            </section>
+        </div>
+    </page-component>
 </template>
-
 <script>
-import HomeComponent from "../Layout/HomeComponent";
+import PageComponent from "../Components/PageComponent";
+
 export default {
     name: "Index",
-    components: {HomeComponent}
+    components: {
+        PageComponent
+    }
 }
 </script>
 

@@ -23,4 +23,5 @@ return [
     'email' => 'Email',
     'message' => 'Message',
     'check_out_code' => 'Check out the code behind this website',
+    'skillset_message' => 'Still reading? Click here to check out my skill set'
 ];

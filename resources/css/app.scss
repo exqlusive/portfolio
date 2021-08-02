@@ -2,122 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-$gray: #1f1f1f;
-$orange: #ff6600;
-$white: #ffffff;
-
-@import url('https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: $gray;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oxanium', cursive;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1 {
-    @apply text-7xl;
-}
-
-h2 {
-    font-size: 16px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-h4 {
-    font-size: 18px;
-}
-
-h5 {
-    font-size: 16px;
-}
-
-h6 {
-    font-size: 14px;
-}
-
-nav {
-    ul {
+    font-size: 4.375rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 75px;
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
     }
+}
 
-    li {
-        @apply font-light text-sm mr-10 py-5;
-        a {
-            @apply text-gray-300;
-            &:link {
-                @apply text-gray-300;
-            }
-            &:active {
-                color: $orange;
-            }
-            &:visited {
-                @apply text-gray-300;
-            }
-            &:hover {
-                color: $orange;
-            }
+p.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        &::after {
+            content: '⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯';
         }
     }
 }
-nav.nav-footer {
-    ul {
-    }
 
-    li {
-        @apply font-light text-xs mr-10 py-5;
-        a {
-            @apply text-gray-300;
-            &:link {
-                @apply text-gray-300;
-            }
-            &:active {
-                color: $orange;
-            }
-            &:visited {
-                @apply text-gray-300;
-            }
-            &:hover {
-                color: $orange;
-            }
-        }
-    }
+p.subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 header {
-    background: rgb(43,43,43);
-    background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(31,31,31,1) 100%);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #ffffff;
 }
 
-.flag {
-    height: 25px;
-}
-
-.title {
-    color: $orange;
-    &::after {
-        content: ' ⎯⎯⎯';
+nav {
+    position: relative;
+    height: 100px;
+    .nav {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 40px 20px;
+        &:hover {
+            transition: 250ms color;
+            color: rgba(37, 99, 235);
+        }
+    }
+    .active {
+        color: rgba(37, 99, 235);
     }
 }
 
-.subtitle {
-    @apply text-3xl font-bold text-white pb-4 leading-relaxed;
-}
-
-.text-orange {
-    color: $orange;
-}
-
-a:visited {
-    @apply text-white;
-}
-
-a:hover {
-    @apply transition-colors ease-in-out text-white;
+section.banner {
+    z-index: 1;
+    background-image: url('/images/home-banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }

@@ -1,111 +1,72 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #1f1f1f;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Oxanium", cursive;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
 }
 
 h1 {
-  @apply text-7xl;
+  font-size: 4.375rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 75px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
-h2 {
-  font-size: 16px;
+p.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  p.title::after {
+    content: "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯";
+  }
 }
 
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-h5 {
-  font-size: 16px;
-}
-
-h6 {
-  font-size: 14px;
-}
-
-nav li {
-  @apply font-light text-sm mr-10 py-5;
-}
-nav li a {
-  @apply text-gray-300;
-}
-nav li a:link {
-  @apply text-gray-300;
-}
-nav li a:active {
-  color: #ff6600;
-}
-nav li a:visited {
-  @apply text-gray-300;
-}
-nav li a:hover {
-  color: #ff6600;
-}
-
-nav.nav-footer li {
-  @apply font-light text-xs mr-10 py-5;
-}
-nav.nav-footer li a {
-  @apply text-gray-300;
-}
-nav.nav-footer li a:link {
-  @apply text-gray-300;
-}
-nav.nav-footer li a:active {
-  color: #ff6600;
-}
-nav.nav-footer li a:visited {
-  @apply text-gray-300;
-}
-nav.nav-footer li a:hover {
-  color: #ff6600;
+p.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 header {
-  background: #2b2b2b;
-  background: radial-gradient(circle, #2b2b2b 0%, #1f1f1f 100%);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #ffffff;
 }
 
-.flag {
-  height: 25px;
+nav {
+  position: relative;
+  height: 100px;
+}
+nav .nav {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 40px 20px;
+}
+nav .nav:hover {
+  transition: 250ms color;
+  color: #2563eb;
+}
+nav .active {
+  color: #2563eb;
 }
 
-.title {
-  color: #ff6600;
-}
-.title::after {
-  content: " ⎯⎯⎯";
-}
-
-.subtitle {
-  @apply text-3xl font-bold text-white pb-4 leading-relaxed;
-}
-
-.text-orange {
-  color: #ff6600;
-}
-
-a:visited {
-  @apply text-white;
-}
-
-a:hover {
-  @apply transition-colors ease-in-out text-white;
+section.banner {
+  z-index: 1;
+  background-image: url("/images/home-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /*# sourceMappingURL=app.css.map */

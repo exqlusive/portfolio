@@ -19,4 +19,3 @@ mix
         require('postcss-import'),
         require('tailwindcss'),
     ])
-    .mergeManifest();
