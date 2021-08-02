@@ -11,9 +11,11 @@
                         <p class="subtitle mb-8">
                             Software developer
                         </p>
-                        <inertia-link
-                            href="curriculum-vitae"
-                            class="py-4 px-10 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-600 rounded uppercase text-white shadow">Mijn CV</inertia-link>
+                        <anchor-component href="/curriculum-vitae">Mijn CV</anchor-component>
+                        <a href="https://github.com/exqlusive/portfolio"
+                            target="_blank"
+                            class="ml-3 py-4 px-10 bg-gray-300 hover:bg-gray-400 hover:text-white rounded uppercase shadow transition-all ease-in-out">
+                            <i class="fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="hidden lg:block col-span-1">
@@ -44,9 +46,7 @@
                         </p>
 
                         <p class="pt-10">
-                            <inertia-link
-                                href="/curriculum-vitae"
-                                class="py-4 px-10 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-600 rounded uppercase text-white shadow">Bekijk Mijn CV</inertia-link>
+                            <anchor-component href="/curriculum-vitae">Bekijk Mijn CV</anchor-component>
                         </p>
                     </div>
                 </div>
@@ -56,11 +56,13 @@
 </template>
 <script>
 import PageComponent from "../Components/PageComponent";
+import AnchorComponent from "../Components/AnchorComponent";
 
 export default {
     name: "Index",
     components: {
-        PageComponent
+        PageComponent,
+        AnchorComponent
     }
 }
 </script>

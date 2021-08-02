@@ -168,9 +168,7 @@
 
                 <p class="pt-10">
                     <i class="fa-solid fa-arrow-right-long ml-3 animate-pulse text-2xl text-blue-700 mr-1"></i>
-                    <inertia-link
-                        href="/curriculum-vitae"
-                        class="py-4 px-10 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-600 rounded uppercase text-white shadow">Bekijk Mijn CV</inertia-link>
+                    <anchor-component href="/curriculum-vitae">Bekijk Mijn CV</anchor-component>
                 </p>
             </div>
         </section>
