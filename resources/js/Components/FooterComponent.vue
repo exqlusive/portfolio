@@ -16,9 +16,7 @@
                 </p>
 
                 <p class="pt-4">
-                    <inertia-link
-                        href="/contact"
-                        class="py-4 px-10 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-600 rounded uppercase text-white shadow">Ik lust wel een koffie</inertia-link>
+                    <anchor-component href="/contact">Ik lust wel een koffie</anchor-component>
                 </p>
             </div>
 
@@ -30,11 +28,16 @@
 
     <section class="bg-gray-900 py-10 lg:py-20 text-gray-300 text-sm">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-5 px-4 lg:px-0">
+            <div class="grid grid-cols-5 px-4 lg:px-0 gap-8">
                 <div class="col-span-5 lg:col-span-2">
                     <inertia-link href="/"><img src="images/logo.png" alt="logo"></inertia-link>
                     <p class="pt-3">
                         Noord-Brabant, Nederland
+                    </p>
+                </div>
+                <div class="col-span-5 lg:col-span-3">
+                    <p>
+                        Wist je dat; Deze website op een VPS draait bij TransIP, met het OS: CentOS 7,gehost wordt via Plesk en tot slot gebruik maakt van Cloudflare!
                     </p>
                 </div>
             </div>
@@ -44,8 +47,13 @@
 </template>
 
 <script>
+import AnchorComponent from "./AnchorComponent";
+
 export default {
-    name: "FooterComponent"
+    name: "FooterComponent",
+    components: {
+        AnchorComponent
+    }
 }
 </script>
 
